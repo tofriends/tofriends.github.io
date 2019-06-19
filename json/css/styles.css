@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Cute+Font&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../img/1.jpg) no-repeat center center/cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.okay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  margin: 30px 5px;
+  padding: 0 10px;
+  font-family: "Cute Font", cursive;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #f4f4f4;
+  border-bottom: 1px solid white;
+  transform: scale(0);
+  opacity: 0.56;
+}
+
+a:hover {
+  transform: scale(1);
+  opacity: 0.99;
+}
+
+a .color {
+  color: #d63031;
+}
+
+a .color1 {
+  color: #686de0;
+}
+
+a .color2 {
+  color: #f9ca24;
+}
+
+a .color3 {
+  color: #1abc9c;
+}
+
+a .color4 {
+  color: #d63031;
+}
+
+.hello {
+  color: #f6e58d;
+}
+
+/*meun*/
+.meuns .meun {
+  position: fixed;
+  top: 2%;
+  right: 3%;
+  font-size: 25px;
+  cursor: pointer;
+  color: #f4f4f4;
+}
+/*navbars*/
+.meuns .navbars {
+  position: fixed;
+  top: 8%;
+  right: 2%;
+  background-color: #dfe6e9;
+  width: 159px;
+  height: 100px;
+  border-radius: 10px;
+  opacity: 0.6;
+  display: none;
+}
+
+.meuns .navbars .cross {
+  position: relative;
+  top: 1%;
+  right: 1%;
+  margin-right: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.meuns .navbars .list .ul-list li {
+  list-style: none;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.meuns .navbars .list .ul-list li a {
+  text-decoration: none;
+  color: #7f8c8d;
+  padding-bottom: 1px;
+  line-height: 1px;
+  border-bottom: 1px solid #74b9ff;
+}
+
+.meuns .navbars .list .ul-list li a:hover {
+  color: black;
+}
+
+.meuns .navbars .list .ul-list li a.active {
+  background-color: #74b9ff;
+  font-size: 15px !important;
+  font-weight: 100;
+  font-family: "ZCOOL KuaiLe", cursive;
+  border-radius: 50%;
+}
+
+@media (max-width: 568px) {
+  .okay {
+    margin: 40px 0px;
+    padding: 0 10px;
+  }
+
+  a {
+    opacity: 0.99;
+    font-size: 0.5em;
+  }
+
+  .hello {
+    color: #000;
+  }
+}

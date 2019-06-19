@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Cute+Font&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #dfe6e9;
+}
+
+.main {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in;
+  background: url(../image/e.jpg) no-repeat center center/cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heading {
+  margin: 10px 20px;
+  padding: 20px auto;
+  font-family: "Wendy One", sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  text-align: center;
+  transform: rotate(0deg);
+}
+
+.headig span {
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+
+/*meun*/
+.meuns .meun {
+  position: fixed;
+  top: 2%;
+  right: 3%;
+  font-size: 25px;
+  cursor: pointer;
+}
+/*navbars*/
+.meuns .navbars {
+  position: fixed;
+  top: 8%;
+  right: 2%;
+  background-color: #dfe6e9;
+  width: 159px;
+  height: 100px;
+  border-radius: 10px;
+  opacity: 0.6;
+  display: none;
+}
+
+.meuns .navbars .cross {
+  position: relative;
+  top: 1%;
+  right: 1%;
+  margin-right: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.meuns .navbars .list .ul-list li {
+  list-style: none;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.meuns .navbars .list .ul-list li a {
+  text-decoration: none;
+  color: #7f8c8d;
+  padding-bottom: 1px;
+  line-height: 1px;
+  border-bottom: 1px solid #74b9ff;
+}
+
+.meuns .navbars .list .ul-list li a:hover {
+  color: black;
+}
+
+.meuns .navbars .list .ul-list li a.active {
+  background-color: #74b9ff;
+  font-size: 15px !important;
+  font-weight: 100;
+  font-family: "ZCOOL KuaiLe", cursive;
+  border-radius: 50%;
+}
+
+.main-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.main-page h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 40px;
+  letter-spacing: 2px;
+  font-family: "Titillium Web", sans-serif;
+  opacity: 0.8;
+  letter-spacing: 20px;
+}
+
+.main-page p {
+  font-size: 20px;
+  font-family: "Wendy One", sans-serif;
+  opacity: 0.7;
+}
+
+.base {
+  position: absolute;
+  bottom: 1%;
+  right: 2%;
+}
+
+.base a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #2d3436;
+  font-family: "Cute Font", cursive;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.loader h2 {
+  margin-top: 10px;
+  margin-right: -60px;
+  padding-right: -10px;
+}
+.loader > span {
+  display: inline-block;
+  background-color: purple;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  margin: 0 8px;
+  transform: translate3d(0);
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loader > span:nth-child(2) {
+  background-color: palevioletred;
+  animation-delay: 0.2s;
+}
+
+.loader > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  to {
+    width: 16px;
+    height: 16px;
+    transform: translate3d(0, -16px, 0);
+  }
+}
